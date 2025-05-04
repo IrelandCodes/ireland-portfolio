@@ -130,6 +130,17 @@ header {
 .skills-grid div:hover, .project-card:hover {
     transform: translateY(-5px);
 }
+
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+.skills-grid div p {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
   
 form {
     display: flex;
