@@ -35,6 +35,106 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
+#hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+    cursor: pointer;
+  }
+  
+  #hamburger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+  }
+  
+  #fullscreen-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(20, 20, 20, 0.95);
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #fullscreen-menu.active {
+    display: flex;
+  }
+  
+  #fullscreen-menu a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    margin: 1rem 0;
+  }
+  
+  #close-menu {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    color: var(--text);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: var(--primary);
+        padding: 1rem;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        /* gap: 1rem; */
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+        background-color: var(--primary);
+        padding: 1rem 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        display: block;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+}
   
 .logo {
     font-size: 1.5rem;
@@ -120,6 +220,7 @@ header {
     padding: 3rem 2rem;
     max-width: 1000px;
     margin: auto;
+    scroll-margin-top: 80px;
 }
   
 .skills-grid, .projects-grid {

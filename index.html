@@ -5,18 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css"/>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+    <div id="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+      
+    <div id="fullscreen-menu">
+        <button id="close-menu">&times;</button>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </div>
     <header>
         <nav class="navbar">
-        <div class="logo">Ireland</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+            <div class="logo">Ireland</div>
+            <div class="nav-menu" id="navMenu"> 
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
 
