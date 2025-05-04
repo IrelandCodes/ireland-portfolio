@@ -165,11 +165,12 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
+    transform: translateX(-45px);
     padding: 4rem 2rem;
     max-width: 1000px;
     margin: auto;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
 }
 
 .hero-img {
@@ -179,7 +180,8 @@ header {
     object-position: center 100%;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    border: 3px solid orange;
+    border: 3px solid var(--accent);
+    transform: translateX(-70px);
 }
 
 .hero-content {
@@ -220,7 +222,7 @@ header {
 
 .section {
     padding: 3rem 2rem;
-    padding-top: 1rem;
+    padding-top: 0rem;
     max-width: 1000px;
     margin: auto;
     scroll-margin-top: 40px;
