@@ -92,11 +92,22 @@ header {
     color: var(--accent);
 }
 
-.socials a {
-    color: var(--accent);
-    font-size: 1.5rem;
-    margin-right: 1rem;
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 20px;
 }
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1);
+  }
   
 .hero-img {
     width: 250px;
