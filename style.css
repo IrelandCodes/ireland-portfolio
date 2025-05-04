@@ -85,6 +85,7 @@ header {
     cursor: pointer;
   }
 
+
 .hamburger {
     display: none;
     font-size: 1.5rem;
@@ -174,7 +175,7 @@ header {
     width: 220px;
     height: 300px;
     object-fit: cover;
-    object-position: center 100%; /* Show more of the bottom */
+    object-position: center 100%;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     border: 3px solid orange;
@@ -220,7 +221,7 @@ header {
     padding: 3rem 2rem;
     max-width: 1000px;
     margin: auto;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 40px;
 }
   
 .skills-grid, .projects-grid {
