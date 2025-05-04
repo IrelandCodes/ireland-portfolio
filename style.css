@@ -1,0 +1,180 @@
+:root {
+    --primary: #0f172a;
+    --accent: #38bdf8;
+    --bg-light: #f8fafc;
+    --bg-dark: #1e293b;
+    --text: #e2e8f0;
+    --radius: 12px;
+    --shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #0f172a, #1e293b);
+    color: var(--text);
+    scroll-behavior: smooth;
+}
+  
+header {
+    background: var(--primary);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent);
+}
+  
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+  
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+  
+.nav-links a:hover {
+    color: var(--accent);
+}
+  
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.hero-img {
+    width: 220px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center 100%; /* Show more of the bottom */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border: 3px solid orange;
+}
+
+.hero-content {
+    flex: 1;
+}
+  
+.hero-content h1 {
+    font-size: 3rem;
+}
+  
+.hero-content span {
+    color: var(--accent);
+}
+
+.socials a {
+    color: var(--accent);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+  
+.hero-img {
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    margin-top: 1rem;
+}
+
+.section {
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+  
+.skills-grid, .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+  
+.skills-grid div, .project-card {
+    background: var(--bg-dark);
+    padding: 1rem;
+    border-radius: var(--radius);
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: var(--shadow);
+}
+
+.skills-grid div:hover, .project-card:hover {
+    transform: translateY(-5px);
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: auto;
+}
+
+form input, form textarea {
+    padding: 0.75rem;
+    border-radius: var(--radius);
+    border: none;
+}
+  
+form button {
+    background: var(--accent);
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #0ea5e9;
+}
+  
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--primary);
+    color: white;
+    margin-top: 2rem;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.6s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+  

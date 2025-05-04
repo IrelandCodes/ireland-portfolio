@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <div class="logo">Ireland</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+    <div class="hero-content">
+        <h1>Hello, I'm <span>Ireland</span></h1>
+        <p>Creative Developer & Designer</p>
+        <div class="socials">
+        <a href="https://github.com/Ireland" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/ireland" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    <img src="./imgs/Ireland1.png" alt="Profile photo" class="hero-img" />
+    </section>
+
+    <section id="about" class="section reveal">
+        <h2>About Me</h2>
+        <p>I'm a developer focused on building responsive, user-friendly web applications with clean code and modern design principles.</p>
+    </section>
+
+    <section id="skills" class="section reveal">
+        <h2>Skills</h2>
+        <!-- <div class="skills-grid">
+            <div><i class="fab fa-html5"></i> HTML</div>
+            <div><i class="fab fa-css3-alt"></i> CSS</div>
+            <div><i class="fab fa-js-square"></i> JavaScript</div>
+            <div><i class="fab fa-python"></i> Python</div>
+            <div><i class="fab fa-react"></i> React</div>
+            <div><i class="fab fa-java"></i> Java</div>
+        </div> -->
+        <div class="skills-grid">
+            <div><img src="./imgs/python.png" alt="Python" class="skill-icon"/><p>Python</p></div>
+            <div><img src="./imgs/java.png" alt="Java" class="skill-icon"/><p>Java</p></div>
+            <div><img src="./imgs/html.png" alt="HTML" class="skill-icon"/><p>HTML</p></div>
+            <div><img src="./imgs/css.png" alt="CSS" class="skill-icon"/><p>CSS</p></div>
+            <div><img src="./imgs/javascript.png" alt="JavaScript" class="skill-icon"/><p>JavaScript</p></div>
+            <div><img src="./imgs/react.png" alt="React" class="skill-icon"/><p>React</p></div>
+            <div><img src="./imgs/c.png" alt="C" class="skill-icon"/><p>C</p></div>
+        </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>A responsive personal website built using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project-card">
+                <h3>Notes App</h3>
+                <p>A simple note-taking app with local storage and CRUD features.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ireland</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
