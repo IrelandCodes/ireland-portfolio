@@ -283,13 +283,13 @@ form button:hover {
     background: #0ea5e9;
 }
   
-footer {
+/* footer {
     text-align: center;
     padding: 1rem;
     background: var(--primary);
     color: white;
     margin-top: 2rem;
-}
+} */
 
 .reveal {
     opacity: 0;
@@ -301,4 +301,70 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
+.footer {
+    background-color: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+}
+  
+.footer-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}  
+
+@media (min-width: 600px) {
+    .footer-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-center;
+        gap: 1.5rem;
+    }
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer .tagline {
+    font-style: italic;
+    color: #aaa;
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+  
+.footer .footer-icons {
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+  
+.footer .footer-icons a {
+    text-decoration: none;
+    margin: 0 0.5rem;
+    color: #ddd;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.footer .footer-icons i {
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.footer .footer-icons i {
+    vertical-align: middle;
+}
+  
+.footer .footer-icons a:hover {
+    color: #1da1f2;
+}
+  
   
