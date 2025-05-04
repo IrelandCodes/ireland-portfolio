@@ -333,6 +333,15 @@ form button:hover {
     text-decoration: none;
 }
 
+.footer a:hoover {
+    color: #1da1f2;
+}
+
+.footer a:visited {
+    color: #ccc;
+}
+
+
 .footer .tagline {
     font-style: italic;
     color: #aaa;
