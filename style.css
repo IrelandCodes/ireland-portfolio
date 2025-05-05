@@ -306,6 +306,7 @@ header {
     border-radius: 10px;
     display: block;
     margin-top: 1rem;
+    align-self: center;
 }
 
 
