@@ -178,7 +178,7 @@ header {
     width: 220px;
     height: 300px;
     object-fit: cover;
-    object-position: center 100%;
+    object-position: center 0%;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     border: 3px solid var(--accent);
