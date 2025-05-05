@@ -293,6 +293,14 @@ header {
     transform: translateY(-5px);
 }
 
+.project-gif {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+
 .skill-icon {
     width: 60px;
     height: 60px;
